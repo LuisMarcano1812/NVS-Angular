@@ -1,26 +1,44 @@
-<section class="fondo-login-register-circle1">
-  <div class="fondo-login-register-circle2"></div>
-</section>
 <section>
-  <img src="#" alt="">
-  <div>
-    <div>
-      <i class="fas fa-user icon-user"></i>
-      <input type="text" class="input-email" placeholder="Correo Electronico">
-    </div>
-    <div>
-      <i class="fas fa-lock icon-password"></i>
-      <input type="password" class="input-password" placeholder="Contraseña">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center">
+            <h1>NVSite</h1>
+            <img src="" alt="">
+        </div>
     </div>
   </div>
-  <div class="register-account">
-    <a [routerLink]="['/register']">¿No tienes cuenta? registrate aqui</a>
-  </div>
-  <button class="button-login">
-    <h1>Iniciar sesion</h1>
-  </button>
-  <div class="fondo-login-register-circle3">
-    <div class="fondo-login-register-circle4"></div>
+  <div class="container">
+      <div class="row justify-content-center align-items-center mb-4">
+          <div class="col-md-4 col-md-offset-3 col-sm-6">
+              <form lg-2>
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form1Example1" class="form-control" />
+                    <label class="form-label" for="form1Example1" ><i class="fas fa-user fa-fw fa-lg"></i> &nbsp;Email address</label>
+                    
+                  </div>
+                
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form1Example2" class="form-control" />
+                    <label class="form-label" for="form1Example2"><i class="fas fa-lock fa-fw fa-lg"></i>&nbsp;Password</label>
+                  </div>
+                
+                  <!-- 2 column grid layout for inline styling -->
+                  <div class="row mb-4">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                          <a [routerLink]="['/register']">Don't have an account? Sign up here</a>
+                    </div>
+                  </div>
+                
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block btn-rounded login-button">
+                    Log in</button>
+                </form>
+              
+          </div>
+      </div>
   </div>
 </section>
+
 
